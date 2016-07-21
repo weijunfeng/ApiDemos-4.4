@@ -15,7 +15,7 @@
 -->
 
 <!-- Demonstrates using Intent.FLAG_ACTIVITY_REORDER_TO_FRONT.
-     See corresponding Java code com.example.android.apis.app.ReorderOnLaunch.java. -->
+     See corresponding Java code com.example.android.apis4.app.ReorderOnLaunch.java. -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"

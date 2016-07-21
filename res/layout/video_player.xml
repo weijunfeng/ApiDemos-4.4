@@ -18,7 +18,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     >
-    <view class="com.example.android.apis.view.VideoPlayerActivity$Content"
+    <view class="com.example.android.apis4.view.VideoPlayerActivity$Content"
         android:id="@+id/content"
         android:src="@drawable/frantic"
         android:layout_width="match_parent"

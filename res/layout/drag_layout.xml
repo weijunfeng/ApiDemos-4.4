@@ -17,7 +17,7 @@
 <!-- Layout description of the DragAndDrop sample's main activity -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:dot="http://schemas.android.com/apk/res/com.example.android.apis"
+    xmlns:dot="http://schemas.android.com/apk/res/com.example.android.apis4"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -29,7 +29,7 @@
         android:text="@string/drag_explanation"
         />
 
-    <com.example.android.apis.view.DraggableDot
+    <com.example.android.apis4.view.DraggableDot
         android:id="@+id/drag_dot_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
         android:layout_below="@id/drag_explanation"
         />
 
-    <com.example.android.apis.view.DraggableDot
+    <com.example.android.apis4.view.DraggableDot
         android:id="@+id/drag_dot_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
         dot:anr="thumbnail"
         />
 
-    <com.example.android.apis.view.DraggableDot
+    <com.example.android.apis4.view.DraggableDot
         android:id="@+id/drag_dot_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
         dot:anr="drop"
         />
 
-    <com.example.android.apis.view.DraggableDot
+    <com.example.android.apis4.view.DraggableDot
         android:id="@+id/drag_dot_hidden"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="@string/hover_intercept_checkbox" />
 
-    <com.example.android.apis.view.HoverInterceptorView
+    <com.example.android.apis4.view.HoverInterceptorView
         android:id="@+id/interceptor"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -60,5 +60,5 @@
             android:layout_height="wrap_content"
             android:background="@drawable/hover_background"
             android:text="@string/hover_button" />
-    </com.example.android.apis.view.HoverInterceptorView>
+    </com.example.android.apis4.view.HoverInterceptorView>
 </LinearLayout>

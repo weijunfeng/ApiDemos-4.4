@@ -17,7 +17,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     >
-    <view class="com.example.android.apis.view.ContentBrowserActivity$Content"
+    <view class="com.example.android.apis4.view.ContentBrowserActivity$Content"
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

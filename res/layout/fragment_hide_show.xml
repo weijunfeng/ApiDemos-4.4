@@ -34,7 +34,7 @@
             android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:text="Hide" />
 
-        <fragment android:name="com.example.android.apis.app.FragmentHideShow$FirstFragment"
+        <fragment android:name="com.example.android.apis4.app.FragmentHideShow$FirstFragment"
                 android:id="@+id/fragment1" android:layout_weight="1"
                 android:layout_width="0px" android:layout_height="wrap_content" />
 
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:text="Hide" />
 
-        <fragment android:name="com.example.android.apis.app.FragmentHideShow$SecondFragment"
+        <fragment android:name="com.example.android.apis4.app.FragmentHideShow$SecondFragment"
                 android:id="@+id/fragment2" android:layout_weight="1"
                 android:layout_width="0px" android:layout_height="wrap_content" />
 
