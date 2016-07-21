@@ -20,7 +20,7 @@
      own application, the package name must be changed from "com.example.*"
      to come from a domain that you own or have control over. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.apis4">
+    package="com.example.android.apis4_4">
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
@@ -44,7 +44,7 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
-    <application android:name="com.example.android.apis4.ApiDemosApplication"
+    <application android:name="com.example.android.apis4_4.ApiDemosApplication"
             android:label="@string/activity_sample_code"
             android:icon="@drawable/app_sample_code"
             android:hardwareAccelerated="true">
@@ -53,7 +53,7 @@
              to be installed if it doesn't exist. -->
         <uses-library android:name="com.example.will.never.exist" android:required="false" />
 
-        <activity android:name="com.example.android.apis4.ApiDemos">
+        <activity android:name="com.example.android.apis4_4.ApiDemos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -67,14 +67,14 @@
 
         <!-- Activity Samples -->
 
-        <activity android:name="com.example.android.apis4.app.HelloWorld" android:label="@string/activity_hello_world">
+        <activity android:name="com.example.android.apis4_4.app.HelloWorld" android:label="@string/activity_hello_world">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.DialogActivity"
+        <activity android:name="com.example.android.apis4_4.app.DialogActivity"
                 android:label="@string/activity_dialog"
                 android:theme="@android:style/Theme.Holo.Dialog">
             <intent-filter>
@@ -83,7 +83,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.CustomDialogActivity"
+        <activity android:name="com.example.android.apis4_4.app.CustomDialogActivity"
                 android:label="@string/activity_custom_dialog"
                 android:theme="@style/Theme.CustomDialog">
             <intent-filter>
@@ -92,7 +92,7 @@
             </intent-filter>
         </activity>
 
-       <activity android:name="com.example.android.apis4.app.QuickContactsDemo"
+       <activity android:name="com.example.android.apis4_4.app.QuickContactsDemo"
                 android:label="@string/quick_contacts_demo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -100,7 +100,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.WallpaperActivity"
+        <activity android:name="com.example.android.apis4_4.app.WallpaperActivity"
                 android:label="@string/activity_wallpaper"
                 android:theme="@style/Theme.Wallpaper">
             <intent-filter>
@@ -109,7 +109,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.TranslucentActivity"
+        <activity android:name="com.example.android.apis4_4.app.TranslucentActivity"
                 android:label="@string/activity_translucent"
                 android:theme="@style/Theme.Translucent">
             <intent-filter>
@@ -118,7 +118,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.TranslucentBlurActivity"
+        <activity android:name="com.example.android.apis4_4.app.TranslucentBlurActivity"
                 android:label="@string/activity_translucent_blur"
                 android:theme="@style/Theme.Transparent">
             <intent-filter>
@@ -127,14 +127,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.Animation" android:label="@string/activity_animation">
+        <activity android:name="com.example.android.apis4_4.app.Animation" android:label="@string/activity_animation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.SaveRestoreState"
+        <activity android:name="com.example.android.apis4_4.app.SaveRestoreState"
                 android:label="@string/activity_save_restore"
                 android:windowSoftInputMode="stateVisible|adjustResize">
             <intent-filter>
@@ -143,7 +143,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.PersistentState"
+        <activity android:name="com.example.android.apis4_4.app.PersistentState"
                 android:label="@string/activity_persistent"
                 android:windowSoftInputMode="stateVisible|adjustResize">
             <intent-filter>
@@ -152,7 +152,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ActivityRecreate"
+        <activity android:name="com.example.android.apis4_4.app.ActivityRecreate"
                 android:label="@string/activity_recreate"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -161,7 +161,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FinishAffinity"
+        <activity android:name="com.example.android.apis4_4.app.FinishAffinity"
                 android:label="@string/activity_finish_affinity"
                 android:taskAffinity=":finishing"
                 android:enabled="@bool/atLeastJellyBean">
@@ -171,7 +171,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.SoftInputModes"
+        <activity android:name="com.example.android.apis4_4.app.SoftInputModes"
                 android:label="@string/soft_input_modes">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -179,43 +179,43 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ReceiveResult" android:label="@string/activity_receive_result">
+        <activity android:name="com.example.android.apis4_4.app.ReceiveResult" android:label="@string/activity_receive_result">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.SendResult"
+        <activity android:name="com.example.android.apis4_4.app.SendResult"
                 android:theme="@style/ThemeDialogWhenLarge">
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.Forwarding" android:label="@string/activity_forwarding">
+        <activity android:name="com.example.android.apis4_4.app.Forwarding" android:label="@string/activity_forwarding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ForwardTarget">
+        <activity android:name="com.example.android.apis4_4.app.ForwardTarget">
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.RedirectEnter" android:label="@string/activity_redirect">
+        <activity android:name="com.example.android.apis4_4.app.RedirectEnter" android:label="@string/activity_redirect">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.RedirectMain">
+        <activity android:name="com.example.android.apis4_4.app.RedirectMain">
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.RedirectGetter">
+        <activity android:name="com.example.android.apis4_4.app.RedirectGetter">
         </activity>
 
         <!-- This sample doesn't work with the new action bar, so use
              the old style theme. -->
-        <activity android:name="com.example.android.apis4.app.CustomTitle"
+        <activity android:name="com.example.android.apis4_4.app.CustomTitle"
                 android:label="@string/activity_custom_title"
                 android:windowSoftInputMode="stateVisible|adjustPan"
                 android:theme="@android:style/Theme">
@@ -225,7 +225,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ReorderOnLaunch"
+        <activity android:name="com.example.android.apis4_4.app.ReorderOnLaunch"
                 android:label="@string/activity_reorder">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -233,11 +233,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ReorderTwo" />
-        <activity android:name="com.example.android.apis4.app.ReorderThree" />
-        <activity android:name="com.example.android.apis4.app.ReorderFour" />
+        <activity android:name="com.example.android.apis4_4.app.ReorderTwo" />
+        <activity android:name="com.example.android.apis4_4.app.ReorderThree" />
+        <activity android:name="com.example.android.apis4_4.app.ReorderFour" />
 
-        <activity android:name="com.example.android.apis4.app.SetWallpaperActivity"
+        <activity android:name="com.example.android.apis4_4.app.SetWallpaperActivity"
                   android:label="@string/activity_setwallpaper">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -245,7 +245,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ScreenOrientation"
+        <activity android:name="com.example.android.apis4_4.app.ScreenOrientation"
                   android:label="@string/activity_screen_orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -255,7 +255,7 @@
 
         <!-- Fragment Samples -->
 
-        <activity android:name="com.example.android.apis4.app.FragmentAlertDialog"
+        <activity android:name="com.example.android.apis4_4.app.FragmentAlertDialog"
                 android:label="@string/fragment_alert_dialog"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -264,7 +264,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentArguments"
+        <activity android:name="com.example.android.apis4_4.app.FragmentArguments"
                 android:label="@string/fragment_arguments"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -273,7 +273,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentCustomAnimations"
+        <activity android:name="com.example.android.apis4_4.app.FragmentCustomAnimations"
                 android:label="@string/fragment_custom_animations"
                 android:enabled="@bool/atLeastHoneycombMR2">
             <intent-filter>
@@ -282,7 +282,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentHideShow"
+        <activity android:name="com.example.android.apis4_4.app.FragmentHideShow"
                 android:label="@string/fragment_hide_show"
                 android:windowSoftInputMode="stateUnchanged"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -292,7 +292,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentContextMenu"
+        <activity android:name="com.example.android.apis4_4.app.FragmentContextMenu"
                 android:label="@string/fragment_context_menu"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -301,7 +301,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentDialog"
+        <activity android:name="com.example.android.apis4_4.app.FragmentDialog"
                 android:label="@string/fragment_dialog"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -310,7 +310,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentDialogOrActivity"
+        <activity android:name="com.example.android.apis4_4.app.FragmentDialogOrActivity"
                 android:label="@string/fragment_dialog_or_activity"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -319,7 +319,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentLayout"
+        <activity android:name="com.example.android.apis4_4.app.FragmentLayout"
                 android:label="@string/fragment_layout"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -328,10 +328,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentLayout$DetailsActivity"
+        <activity android:name="com.example.android.apis4_4.app.FragmentLayout$DetailsActivity"
                 android:enabled="@bool/atLeastHoneycomb" />
 
-        <activity android:name="com.example.android.apis4.app.FragmentListArray"
+        <activity android:name="com.example.android.apis4_4.app.FragmentListArray"
                 android:label="@string/fragment_list_array"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -340,7 +340,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentMenu"
+        <activity android:name="com.example.android.apis4_4.app.FragmentMenu"
                 android:label="@string/fragment_menu"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -349,7 +349,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentRetainInstance"
+        <activity android:name="com.example.android.apis4_4.app.FragmentRetainInstance"
                 android:label="@string/fragment_retain_instance"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -358,7 +358,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentReceiveResult"
+        <activity android:name="com.example.android.apis4_4.app.FragmentReceiveResult"
                 android:label="@string/fragment_receive_result"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -367,7 +367,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentStack"
+        <activity android:name="com.example.android.apis4_4.app.FragmentStack"
                 android:label="@string/fragment_stack"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -376,7 +376,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.FragmentTabs"
+        <activity android:name="com.example.android.apis4_4.app.FragmentTabs"
                 android:label="@string/fragment_tabs"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -387,7 +387,7 @@
 
         <!-- Loader Samples -->
 
-        <activity android:name="com.example.android.apis4.app.LoaderCursor"
+        <activity android:name="com.example.android.apis4_4.app.LoaderCursor"
                 android:label="@string/loader_cursor"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -396,7 +396,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.LoaderCustom"
+        <activity android:name="com.example.android.apis4_4.app.LoaderCustom"
                 android:label="@string/loader_custom"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -406,7 +406,7 @@
         </activity>
 
 
-        <activity android:name="com.example.android.apis4.app.LoaderThrottle"
+        <activity android:name="com.example.android.apis4_4.app.LoaderThrottle"
                 android:label="@string/loader_throttle"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -414,12 +414,12 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <provider android:name="com.example.android.apis4.app.LoaderThrottle$SimpleProvider"
-                  android:authorities="com.example.android.apis4.app.LoaderThrottle"
+        <provider android:name="com.example.android.apis4_4.app.LoaderThrottle$SimpleProvider"
+                  android:authorities="com.example.android.apis4_4.app.LoaderThrottle"
                   android:enabled="@bool/atLeastHoneycomb" />
 
 
-        <activity android:name="com.example.android.apis4.app.LoaderRetained"
+        <activity android:name="com.example.android.apis4_4.app.LoaderRetained"
                 android:label="@string/loader_retained"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -430,14 +430,14 @@
 
         <!-- Intent Samples -->
 
-        <activity android:name="com.example.android.apis4.app.Intents" android:label="@string/activity_intents">
+        <activity android:name="com.example.android.apis4_4.app.Intents" android:label="@string/activity_intents">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.IntentActivityFlags"
+        <activity android:name="com.example.android.apis4_4.app.IntentActivityFlags"
                 android:label="@string/activity_intent_activity_flags">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -447,9 +447,9 @@
 
         <!-- Service Samples -->
 
-        <service android:name="com.example.android.apis4.app.LocalService" android:stopWithTask="true" />
+        <service android:name="com.example.android.apis4_4.app.LocalService" android:stopWithTask="true" />
 
-        <activity android:name="com.example.android.apis4.app.LocalServiceActivities$Controller"
+        <activity android:name="com.example.android.apis4_4.app.LocalServiceActivities$Controller"
                 android:label="@string/activity_local_service_controller"
                 android:launchMode="singleTop">
             <intent-filter>
@@ -458,7 +458,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.LocalServiceActivities$Binding"
+        <activity android:name="com.example.android.apis4_4.app.LocalServiceActivities$Binding"
                 android:label="@string/activity_local_service_binding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -467,11 +467,11 @@
         </activity>
 
 
-        <service android:name="com.example.android.apis4.app.MessengerService"
+        <service android:name="com.example.android.apis4_4.app.MessengerService"
                 android:process=":remote" />
 
 
-        <activity android:name="com.example.android.apis4.app.MessengerServiceActivities$Binding"
+        <activity android:name="com.example.android.apis4_4.app.MessengerServiceActivities$Binding"
                 android:label="@string/activity_messenger_service_binding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -479,19 +479,19 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.android.apis4.app.RemoteService" android:process=":remote">
+        <service android:name="com.example.android.apis4_4.app.RemoteService" android:process=":remote">
             <intent-filter>
                 <!-- These are the interfaces supported by the service, which
                      you can bind to. -->
-                <action android:name="com.example.android.apis4.app.IRemoteService" />
-                <action android:name="com.example.android.apis4.app.ISecondary" />
+                <action android:name="com.example.android.apis4_4.app.IRemoteService" />
+                <action android:name="com.example.android.apis4_4.app.ISecondary" />
                 <!-- This is an action code you can use to select the service
                      without explicitly supplying the implementation class. -->
-                <action android:name="com.example.android.apis4.app.REMOTE_SERVICE" />
+                <action android:name="com.example.android.apis4_4.app.REMOTE_SERVICE" />
             </intent-filter>
         </service>
 
-        <activity android:name="com.example.android.apis4.app.RemoteService$Controller"
+        <activity android:name="com.example.android.apis4_4.app.RemoteService$Controller"
                 android:label="@string/activity_remote_service_controller"
                 android:launchMode="singleTop">
             <intent-filter>
@@ -500,7 +500,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.RemoteService$Binding"
+        <activity android:name="com.example.android.apis4_4.app.RemoteService$Binding"
                 android:label="@string/activity_remote_service_binding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -508,7 +508,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.RemoteService$BindingOptions"
+        <activity android:name="com.example.android.apis4_4.app.RemoteService$BindingOptions"
                 android:label="@string/activity_remote_service_binding_options">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -516,9 +516,9 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.android.apis4.app.ServiceStartArguments" />
+        <service android:name="com.example.android.apis4_4.app.ServiceStartArguments" />
 
-        <activity android:name="com.example.android.apis4.app.ServiceStartArguments$Controller"
+        <activity android:name="com.example.android.apis4_4.app.ServiceStartArguments$Controller"
                 android:label="@string/activity_service_start_arguments_controller"
                 android:launchMode="singleTop">
             <intent-filter>
@@ -527,9 +527,9 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.android.apis4.app.ForegroundService" />
+        <service android:name="com.example.android.apis4_4.app.ForegroundService" />
 
-        <activity android:name="com.example.android.apis4.app.ForegroundService$Controller"
+        <activity android:name="com.example.android.apis4_4.app.ForegroundService$Controller"
                 android:label="@string/activity_foreground_service_controller"
                 android:launchMode="singleTop">
             <intent-filter>
@@ -538,7 +538,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.IsolatedService$Controller"
+        <activity android:name="com.example.android.apis4_4.app.IsolatedService$Controller"
                 android:label="@string/activity_isolated_service_controller"
                 android:launchMode="singleTop"
                 android:enabled="@bool/atLeastJellyBean">
@@ -548,27 +548,27 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.android.apis4.app.IsolatedService" android:isolatedProcess="true"
+        <service android:name="com.example.android.apis4_4.app.IsolatedService" android:isolatedProcess="true"
                  android:enabled="@bool/atLeastJellyBean" />
-        <service android:name="com.example.android.apis4.app.IsolatedService2" android:isolatedProcess="true"
+        <service android:name="com.example.android.apis4_4.app.IsolatedService2" android:isolatedProcess="true"
                  android:enabled="@bool/atLeastJellyBean" />
 
         <!-- Alarm Samples -->
 
-        <receiver android:name="com.example.android.apis4.app.OneShotAlarm" android:process=":remote" />
+        <receiver android:name="com.example.android.apis4_4.app.OneShotAlarm" android:process=":remote" />
 
-        <receiver android:name="com.example.android.apis4.app.RepeatingAlarm" android:process=":remote" />
+        <receiver android:name="com.example.android.apis4_4.app.RepeatingAlarm" android:process=":remote" />
 
-        <activity android:name="com.example.android.apis4.app.AlarmController" android:label="@string/activity_alarm_controller">
+        <activity android:name="com.example.android.apis4_4.app.AlarmController" android:label="@string/activity_alarm_controller">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.android.apis4.app.AlarmService_Service" android:process=":remote" />
+        <service android:name="com.example.android.apis4_4.app.AlarmService_Service" android:process=":remote" />
 
-        <activity android:name="com.example.android.apis4.app.AlarmService" android:label="@string/activity_alarm_service">
+        <activity android:name="com.example.android.apis4_4.app.AlarmService" android:label="@string/activity_alarm_service">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -579,7 +579,7 @@
         <!--  Accessibility examples      -->
         <!-- ============================ -->
 
-        <activity android:name="com.example.android.apis4.accessibility.ClockBackActivity"
+        <activity android:name="com.example.android.apis4_4.accessibility.ClockBackActivity"
             android:label="@string/accessibility_service">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -587,7 +587,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.android.apis4.accessibility.ClockBackService"
+        <service android:name="com.example.android.apis4_4.accessibility.ClockBackService"
             android:label="@string/accessibility_service_label"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
@@ -595,7 +595,7 @@
             </intent-filter>
         </service>
 
-        <activity android:name="com.example.android.apis4.accessibility.TaskListActivity"
+        <activity android:name="com.example.android.apis4_4.accessibility.TaskListActivity"
                   android:label="@string/accessibility_query_window"
                   android:enabled="@bool/atLeastIceCreamSandwich">
             <intent-filter>
@@ -604,7 +604,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.android.apis4.accessibility.TaskBackService"
+        <service android:name="com.example.android.apis4_4.accessibility.TaskBackService"
                  android:label="@string/accessibility_query_window_label"
                  android:enabled="@bool/atLeastIceCreamSandwich"
                  android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
@@ -616,7 +616,7 @@
                 android:resource="@xml/taskbackconfig" />
         </service>
 
-        <activity android:name="com.example.android.apis4.accessibility.CustomViewAccessibilityActivity"
+        <activity android:name="com.example.android.apis4_4.accessibility.CustomViewAccessibilityActivity"
                   android:label="@string/accessibility_custom_view"
                   android:enabled="@bool/atLeastIceCreamSandwich">
             <intent-filter>
@@ -627,14 +627,14 @@
 
         <!-- Instrumentation Samples -->
 
-        <activity android:name="com.example.android.apis4.app.LocalSample" android:label="@string/activity_local_sample">
+        <activity android:name="com.example.android.apis4_4.app.LocalSample" android:label="@string/activity_local_sample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <!-- category android:name="android.intent.category.SAMPLE_CODE" /-->
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ContactsFilter" android:label="@string/activity_contacts_filter">
+        <activity android:name="com.example.android.apis4_4.app.ContactsFilter" android:label="@string/activity_contacts_filter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <!-- category android:name="android.intent.category.SAMPLE_CODE" /-->
@@ -644,14 +644,14 @@
 
         <!-- Notifications samples -->
 
-        <activity android:name="com.example.android.apis4.app.NotifyWithText" android:label="App/Notification/NotifyWithText">
+        <activity android:name="com.example.android.apis4_4.app.NotifyWithText" android:label="App/Notification/NotifyWithText">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.IncomingMessage"
+        <activity android:name="com.example.android.apis4_4.app.IncomingMessage"
                 android:label="App/Notification/IncomingMessage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -659,12 +659,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.IncomingMessageView"
+        <activity android:name="com.example.android.apis4_4.app.IncomingMessageView"
                 android:label="App/Notification/IncomingMessageView">
         </activity>
 
 
-        <activity android:name="com.example.android.apis4.app.IncomingMessageInterstitial"
+        <activity android:name="com.example.android.apis4_4.app.IncomingMessageInterstitial"
                 android:label="You have messages"
                 android:theme="@style/ThemeHoloDialog"
                 android:launchMode="singleTask"
@@ -677,14 +677,14 @@
              from StatusBarNotifications.  Note the configuration here so
              that the activity layers on top of whatever the user is doing,
              allowing them to press back to return. -->
-        <activity android:name="com.example.android.apis4.app.NotificationDisplay"
+        <activity android:name="com.example.android.apis4_4.app.NotificationDisplay"
                 android:theme="@style/Theme.Transparent"
                 android:taskAffinity=""
                 android:excludeFromRecents="true"
                 android:noHistory="true">
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.StatusBarNotifications"
+        <activity android:name="com.example.android.apis4_4.app.StatusBarNotifications"
                 android:label="App/Notification/Status Bar"
                 android:launchMode="singleTop">
             <intent-filter>
@@ -693,9 +693,9 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.android.apis4.app.NotifyingService" />
+        <service android:name="com.example.android.apis4_4.app.NotifyingService" />
 
-        <activity android:name="com.example.android.apis4.app.NotifyingController" android:label="App/Notification/Notifying Service Controller">
+        <activity android:name="com.example.android.apis4_4.app.NotifyingController" android:label="App/Notification/Notifying Service Controller">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -703,7 +703,7 @@
         </activity>
 
         <!-- Dialog samples -->
-        <activity android:name="com.example.android.apis4.app.AlertDialogSamples" android:label="@string/activity_alert_dialog">
+        <activity android:name="com.example.android.apis4_4.app.AlertDialogSamples" android:label="@string/activity_alert_dialog">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -717,7 +717,7 @@
         <!-- of android.app.default_searchable is more typically handled at the application -->
         <!-- level, where it can serve as a default for all of your activities. -->
 
-        <activity android:name="com.example.android.apis4.app.SearchInvoke"
+        <activity android:name="com.example.android.apis4_4.app.SearchInvoke"
                   android:label="@string/search_invoke">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -741,7 +741,7 @@
         <!-- This activity represents the "search" activity in your application, in which -->
         <!-- search results are gathered and displayed. -->
 
-        <activity android:name="com.example.android.apis4.app.SearchQueryResults"
+        <activity android:name="com.example.android.apis4_4.app.SearchQueryResults"
                   android:label="@string/search_query_results">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -765,8 +765,8 @@
         <!-- This provider declaration informs the Search Manager that you have a provider of -->
         <!-- Search suggestions, and provides information about how to access it. -->
 
-        <provider android:name="com.example.android.apis4.app.SearchSuggestionSampleProvider"
-                  android:authorities="com.example.android.apis4.SuggestionProvider" />
+        <provider android:name="com.example.android.apis4_4.app.SearchSuggestionSampleProvider"
+                  android:authorities="com.example.android.apis4_4.SuggestionProvider" />
 
         <!-- Shortcuts Samples -->
 
@@ -791,7 +791,7 @@
         <!-- 3.  Code elsewhere within your activity, if appropriate, to receive -->
         <!--     intents from the shortcut itself. -->
 
-        <activity android:name="com.example.android.apis4.app.LauncherShortcuts"
+        <activity android:name="com.example.android.apis4_4.app.LauncherShortcuts"
                   android:label="@string/shortcuts">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -805,7 +805,7 @@
         <!-- icon) that will be seen in the launcher's create-shortcut user interface. -->
 
         <activity-alias android:name=".app.CreateShortcuts"
-            android:targetActivity="com.example.android.apis4.app.LauncherShortcuts"
+            android:targetActivity="com.example.android.apis4_4.app.LauncherShortcuts"
             android:label="@string/sample_shortcuts">
 
             <!--  This intent-filter allows your shortcuts to be created in the launcher. -->
@@ -818,7 +818,7 @@
 
         <!-- Menu Samples -->
 
-        <activity android:name="com.example.android.apis4.app.MenuInflateFromXml" android:label="@string/menu_from_xml_title">
+        <activity android:name="com.example.android.apis4_4.app.MenuInflateFromXml" android:label="@string/menu_from_xml_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -827,7 +827,7 @@
 
         <!-- Device Admin Samples -->
 
-        <activity android:name="com.example.android.apis4.app.DeviceAdminSample"
+        <activity android:name="com.example.android.apis4_4.app.DeviceAdminSample"
                 android:label="@string/activity_sample_device_admin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -836,7 +836,7 @@
         </activity>
 
 
-        <receiver android:name="com.example.android.apis4.app.DeviceAdminSample$DeviceAdminSampleReceiver"
+        <receiver android:name="com.example.android.apis4_4.app.DeviceAdminSample$DeviceAdminSampleReceiver"
                 android:label="@string/sample_device_admin"
                 android:description="@string/sample_device_admin_description"
                 android:permission="android.permission.BIND_DEVICE_ADMIN">
@@ -850,7 +850,7 @@
 
         <!-- Voice Recognition Samples -->
 
-        <activity android:name="com.example.android.apis4.app.VoiceRecognition" android:label="@string/voice_recognition">
+        <activity android:name="com.example.android.apis4_4.app.VoiceRecognition" android:label="@string/voice_recognition">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -859,7 +859,7 @@
 
         <!-- Text-To-Speech Samples -->
 
-        <activity android:name="com.example.android.apis4.app.TextToSpeechActivity" android:label="@string/text_to_speech">
+        <activity android:name="com.example.android.apis4_4.app.TextToSpeechActivity" android:label="@string/text_to_speech">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -867,7 +867,7 @@
         </activity>
 
         <!-- Action Bar Samples -->
-        <activity android:name="com.example.android.apis4.app.ActionBarMechanics"
+        <activity android:name="com.example.android.apis4_4.app.ActionBarMechanics"
                 android:label="@string/action_bar_mechanics"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -876,7 +876,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ActionBarUsage"
+        <activity android:name="com.example.android.apis4_4.app.ActionBarUsage"
                 android:label="@string/action_bar_usage"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -885,7 +885,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ActionBarDisplayOptions"
+        <activity android:name="com.example.android.apis4_4.app.ActionBarDisplayOptions"
                 android:label="@string/action_bar_display_options"
                 android:logo="@drawable/apidemo_androidlogo"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -895,7 +895,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ActionBarTabs"
+        <activity android:name="com.example.android.apis4_4.app.ActionBarTabs"
                 android:label="@string/action_bar_tabs"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -904,7 +904,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ActionBarSettingsActionProviderActivity"
+        <activity android:name="com.example.android.apis4_4.app.ActionBarSettingsActionProviderActivity"
                 android:label="@string/action_bar_settings_action_provider"
                 android:enabled="@bool/atLeastIceCreamSandwich">
             <intent-filter>
@@ -913,7 +913,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.app.ActionBarShareActionProviderActivity"
+        <activity android:name="com.example.android.apis4_4.app.ActionBarShareActionProviderActivity"
                 android:label="@string/action_bar_share_action_provider"
                 android:enabled="@bool/atLeastIceCreamSandwich">
             <intent-filter>
@@ -923,7 +923,7 @@
         </activity>
 
         <!-- Accessibility Samples -->
-        <activity android:name="com.example.android.apis4.accessibility.AccessibilityNodeProviderActivity"
+        <activity android:name="com.example.android.apis4_4.accessibility.AccessibilityNodeProviderActivity"
                 android:label="@string/accessibility_node_provider"
                 android:enabled="@bool/atLeastIceCreamSandwich">
             <intent-filter>
@@ -935,7 +935,7 @@
         <!-- Application Updating Samples -->
 
 
-        <receiver android:name="com.example.android.apis4.app.AppUpdateReceiver">
+        <receiver android:name="com.example.android.apis4_4.app.AppUpdateReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
             </intent-filter>
@@ -946,7 +946,7 @@
         <!--       PREFERENCE PACKAGE SAMPLES      -->
         <!-- ************************************* -->
 
-        <activity android:name="com.example.android.apis4.preference.FragmentPreferences"
+        <activity android:name="com.example.android.apis4_4.preference.FragmentPreferences"
                 android:label="@string/fragment_preferences"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -955,7 +955,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.preference.PreferenceWithHeaders"
+        <activity android:name="com.example.android.apis4_4.preference.PreferenceWithHeaders"
                 android:label="@string/preference_with_headers"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -964,7 +964,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.preference.PreferencesFromXml"
+        <activity android:name="com.example.android.apis4_4.preference.PreferencesFromXml"
                 android:label="@string/preferences_from_xml">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -972,7 +972,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.preference.PreferencesFromCode"
+        <activity android:name="com.example.android.apis4_4.preference.PreferencesFromCode"
                 android:label="@string/preferences_from_code">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -980,7 +980,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.preference.AdvancedPreferences"
+        <activity android:name="com.example.android.apis4_4.preference.AdvancedPreferences"
                 android:label="@string/advanced_preferences">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -988,7 +988,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.preference.LaunchingPreferences"
+        <activity android:name="com.example.android.apis4_4.preference.LaunchingPreferences"
                 android:label="@string/launching_preferences">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -996,7 +996,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.preference.PreferenceDependencies"
+        <activity android:name="com.example.android.apis4_4.preference.PreferenceDependencies"
                 android:label="@string/preference_dependencies">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1004,14 +1004,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.preference.DefaultValues" android:label="@string/default_values">
+        <activity android:name="com.example.android.apis4_4.preference.DefaultValues" android:label="@string/default_values">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.preference.SwitchPreference"
+        <activity android:name="com.example.android.apis4_4.preference.SwitchPreference"
                 android:label="@string/switch_preference"
                 android:enabled="@bool/atLeastIceCreamSandwich">
             <intent-filter>
@@ -1024,7 +1024,7 @@
         <!--        CONTENT PACKAGE SAMPLES        -->
         <!-- ************************************* -->
 
-        <activity android:name="com.example.android.apis4.content.ClipboardSample"
+        <activity android:name="com.example.android.apis4_4.content.ClipboardSample"
                 android:label="@string/activity_clipboard"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -1033,7 +1033,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.content.ExternalStorage" android:label="@string/activity_external_storage">
+        <activity android:name="com.example.android.apis4_4.content.ExternalStorage" android:label="@string/activity_external_storage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -1041,7 +1041,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.content.StyledText" android:label="@string/activity_styled_text">
+        <activity android:name="com.example.android.apis4_4.content.StyledText" android:label="@string/activity_styled_text">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -1049,7 +1049,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.content.ResourcesLayoutReference"
+        <activity android:name="com.example.android.apis4_4.content.ResourcesLayoutReference"
                 android:label="@string/activity_resources_layout_reference">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1058,7 +1058,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.content.ResourcesWidthAndHeight"
+        <activity android:name="com.example.android.apis4_4.content.ResourcesWidthAndHeight"
                 android:label="@string/activity_resources_width_and_height"
                 android:enabled="@bool/atLeastHoneycombMR2">
             <intent-filter>
@@ -1068,7 +1068,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.content.ResourcesSmallestWidth"
+        <activity android:name="com.example.android.apis4_4.content.ResourcesSmallestWidth"
                 android:label="@string/activity_resources_smallest_width"
                 android:enabled="@bool/atLeastHoneycombMR2">
             <intent-filter>
@@ -1078,7 +1078,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.content.ReadAsset" android:label="@string/activity_read_asset">
+        <activity android:name="com.example.android.apis4_4.content.ReadAsset" android:label="@string/activity_read_asset">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -1086,21 +1086,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.content.ResourcesSample" android:label="@string/activity_resources">
+        <activity android:name="com.example.android.apis4_4.content.ResourcesSample" android:label="@string/activity_resources">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.content.PickContact" android:label="@string/activity_pick_contact">
+        <activity android:name="com.example.android.apis4_4.content.PickContact" android:label="@string/activity_pick_contact">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.content.InstallApk" android:label="@string/activity_install_apk"
+        <activity android:name="com.example.android.apis4_4.content.InstallApk" android:label="@string/activity_install_apk"
                   android:enabled="@bool/atLeastHoneycombMR2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1108,47 +1108,47 @@
             </intent-filter>
         </activity>
 
-        <provider android:name="com.example.android.apis4.content.FileProvider"
-                  android:authorities="com.example.android.apis4.content.FileProvider"
+        <provider android:name="com.example.android.apis4_4.content.FileProvider"
+                  android:authorities="com.example.android.apis4_4.content.FileProvider"
                   android:enabled="@bool/atLeastHoneycombMR2" />
 
         <!-- ************************************* -->
         <!--     OS PACKAGE SAMPLES                -->
         <!-- ************************************* -->
 
-        <activity android:name="com.example.android.apis4.os.MorseCode" android:label="OS/Morse Code">
+        <activity android:name="com.example.android.apis4_4.os.MorseCode" android:label="OS/Morse Code">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.os.Sensors" android:label="OS/Sensors">
+        <activity android:name="com.example.android.apis4_4.os.Sensors" android:label="OS/Sensors">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.os.RotationVectorDemo" android:label="OS/Rotation Vector" android:screenOrientation="nosensor">
+        <activity android:name="com.example.android.apis4_4.os.RotationVectorDemo" android:label="OS/Rotation Vector" android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.os.SmsMessagingDemo" android:label="OS/SMS Messaging">
+        <activity android:name="com.example.android.apis4_4.os.SmsMessagingDemo" android:label="OS/SMS Messaging">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.os.SmsReceivedDialog"
+        <activity android:name="com.example.android.apis4_4.os.SmsReceivedDialog"
                   android:theme="@android:style/Theme.Translucent.NoTitleBar"
                   android:launchMode="singleInstance" />
 
-        <receiver android:name="com.example.android.apis4.os.SmsMessageReceiver" android:enabled="false">
+        <receiver android:name="com.example.android.apis4_4.os.SmsMessageReceiver" android:enabled="false">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
@@ -1158,7 +1158,7 @@
         <!--     ANDROID.ANIMATION PACKAGE SAMPLES         -->
         <!-- ************************************* -->
 
-        <activity android:name="com.example.android.apis4.animation.AnimationLoading"
+        <activity android:name="com.example.android.apis4_4.animation.AnimationLoading"
                 android:label="Animation/Loading"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -1168,7 +1168,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.AnimationCloning"
+        <activity android:name="com.example.android.apis4_4.animation.AnimationCloning"
                 android:label="Animation/Cloning"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -1178,7 +1178,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.AnimationSeeking"
+        <activity android:name="com.example.android.apis4_4.animation.AnimationSeeking"
                 android:label="Animation/Seeking"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -1188,7 +1188,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.AnimatorEvents"
+        <activity android:name="com.example.android.apis4_4.animation.AnimatorEvents"
                 android:label="Animation/Events"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -1198,7 +1198,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.BouncingBalls"
+        <activity android:name="com.example.android.apis4_4.animation.BouncingBalls"
                 android:label="Animation/Bouncing Balls"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -1208,7 +1208,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.CustomEvaluator"
+        <activity android:name="com.example.android.apis4_4.animation.CustomEvaluator"
                 android:label="Animation/Custom Evaluator"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -1218,7 +1218,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.ListFlipper"
+        <activity android:name="com.example.android.apis4_4.animation.ListFlipper"
                 android:label="Animation/View Flip"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -1227,7 +1227,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.ReversingAnimation"
+        <activity android:name="com.example.android.apis4_4.animation.ReversingAnimation"
                 android:label="Animation/Reversing"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -1237,7 +1237,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.MultiPropertyAnimation"
+        <activity android:name="com.example.android.apis4_4.animation.MultiPropertyAnimation"
                 android:label="Animation/Multiple Properties"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -1247,7 +1247,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.LayoutAnimations"
+        <activity android:name="com.example.android.apis4_4.animation.LayoutAnimations"
                 android:label="Animation/Layout Animations"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -1256,7 +1256,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.LayoutAnimationsHideShow"
+        <activity android:name="com.example.android.apis4_4.animation.LayoutAnimationsHideShow"
                 android:label="Animation/Hide-Show Animations"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -1265,7 +1265,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.animation.LayoutAnimationsByDefault"
+        <activity android:name="com.example.android.apis4_4.animation.LayoutAnimationsByDefault"
                 android:label="Animation/Default Layout Animations"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
@@ -1278,7 +1278,7 @@
         <!--     ANIMATION PACKAGE SAMPLES         -->
         <!-- ************************************* -->
 
-        <activity android:name="com.example.android.apis4.animation.Transition3d" android:label="Views/Animation/3D Transition">
+        <activity android:name="com.example.android.apis4_4.animation.Transition3d" android:label="Views/Animation/3D Transition">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -1289,97 +1289,97 @@
         <!--      VIEW/WIDGET PACKAGE SAMPLES      -->
         <!-- ************************************* -->
 
-        <activity android:name="com.example.android.apis4.view.ChronometerDemo" android:label="Views/Chronometer">
+        <activity android:name="com.example.android.apis4_4.view.ChronometerDemo" android:label="Views/Chronometer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.apis4.view.WebView1" android:label="Views/WebView">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.view.RelativeLayout1" android:label="Views/Layouts/RelativeLayout/1. Vertical">
+        <activity android:name="com.example.android.apis4_4.view.WebView1" android:label="Views/WebView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.RelativeLayout2" android:label="Views/Layouts/RelativeLayout/2. Simple Form">
+        <activity android:name="com.example.android.apis4_4.view.RelativeLayout1" android:label="Views/Layouts/RelativeLayout/1. Vertical">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout1" android:label="Views/Layouts/LinearLayout/1. Vertical">
+        <activity android:name="com.example.android.apis4_4.view.RelativeLayout2" android:label="Views/Layouts/RelativeLayout/2. Simple Form">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout2" android:label="Views/Layouts/LinearLayout/2. Vertical (Fill Screen)">
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout1" android:label="Views/Layouts/LinearLayout/1. Vertical">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout3" android:label="Views/Layouts/LinearLayout/3. Vertical (Padded)">
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout2" android:label="Views/Layouts/LinearLayout/2. Vertical (Fill Screen)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout4" android:label="Views/Layouts/LinearLayout/4. Horizontal">
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout3" android:label="Views/Layouts/LinearLayout/3. Vertical (Padded)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout5" android:label="Views/Layouts/LinearLayout/5. Simple Form">
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout4" android:label="Views/Layouts/LinearLayout/4. Horizontal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout6" android:label="Views/Layouts/LinearLayout/6. Uniform Size">
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout5" android:label="Views/Layouts/LinearLayout/5. Simple Form">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout7" android:label="Views/Layouts/LinearLayout/7. Fill Parent">
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout6" android:label="Views/Layouts/LinearLayout/6. Uniform Size">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout8" android:label="Views/Layouts/LinearLayout/8. Gravity">
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout7" android:label="Views/Layouts/LinearLayout/7. Fill Parent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout9" android:label="Views/Layouts/LinearLayout/9. Layout Weight">
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout8" android:label="Views/Layouts/LinearLayout/8. Gravity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LinearLayout10" android:label="Views/Layouts/LinearLayout/10. Background Image">
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout9" android:label="Views/Layouts/LinearLayout/9. Layout Weight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.view.LinearLayout10" android:label="Views/Layouts/LinearLayout/10. Background Image">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -1387,56 +1387,56 @@
         </activity>
 
 
-        <activity android:name="com.example.android.apis4.view.RadioGroup1" android:label="Views/Radio Group">
+        <activity android:name="com.example.android.apis4_4.view.RadioGroup1" android:label="Views/Radio Group">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ScrollView1" android:label="Views/Layouts/ScrollView/1. Short">
+        <activity android:name="com.example.android.apis4_4.view.ScrollView1" android:label="Views/Layouts/ScrollView/1. Short">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ScrollView2" android:label="Views/Layouts/ScrollView/2. Long">
+        <activity android:name="com.example.android.apis4_4.view.ScrollView2" android:label="Views/Layouts/ScrollView/2. Long">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.HorizontalScrollView1" android:label="Views/Layouts/HorizontalScrollView">
+        <activity android:name="com.example.android.apis4_4.view.HorizontalScrollView1" android:label="Views/Layouts/HorizontalScrollView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Tabs1" android:label="Views/Tabs/1. Content By Id">
+        <activity android:name="com.example.android.apis4_4.view.Tabs1" android:label="Views/Tabs/1. Content By Id">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Tabs2" android:label="Views/Tabs/2. Content By Factory">
+        <activity android:name="com.example.android.apis4_4.view.Tabs2" android:label="Views/Tabs/2. Content By Factory">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Tabs3" android:label="Views/Tabs/3. Content By Intent">
+        <activity android:name="com.example.android.apis4_4.view.Tabs3" android:label="Views/Tabs/3. Content By Intent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Tabs4" android:label="Views/Tabs/4. Non Holo theme"
+        <activity android:name="com.example.android.apis4_4.view.Tabs4" android:label="Views/Tabs/4. Non Holo theme"
                   android:theme="@android:style/Theme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -1444,357 +1444,357 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Tabs5" android:label="Views/Tabs/5. Scrollable">
+        <activity android:name="com.example.android.apis4_4.view.Tabs5" android:label="Views/Tabs/5. Scrollable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Tabs6" android:label="Views/Tabs/6. Right aligned">
+        <activity android:name="com.example.android.apis4_4.view.Tabs6" android:label="Views/Tabs/6. Right aligned">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.SAMPLE_CODE"/>
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.InternalSelectionScroll" android:label="Views/Layouts/ScrollView/3. Internal Selection">
+        <activity android:name="com.example.android.apis4_4.view.InternalSelectionScroll" android:label="Views/Layouts/ScrollView/3. Internal Selection">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout1" android:label="Views/Layouts/TableLayout/01. Basic">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout1" android:label="Views/Layouts/TableLayout/01. Basic">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout2" android:label="Views/Layouts/TableLayout/02. Empty Cells">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout2" android:label="Views/Layouts/TableLayout/02. Empty Cells">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout3" android:label="Views/Layouts/TableLayout/03. Long Content">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout3" android:label="Views/Layouts/TableLayout/03. Long Content">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout4" android:label="Views/Layouts/TableLayout/04. Stretchable">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout4" android:label="Views/Layouts/TableLayout/04. Stretchable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout5" android:label="Views/Layouts/TableLayout/05. Spanning and Stretchable">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout5" android:label="Views/Layouts/TableLayout/05. Spanning and Stretchable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout6" android:label="Views/Layouts/TableLayout/06. More Spanning and Stretchable">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout6" android:label="Views/Layouts/TableLayout/06. More Spanning and Stretchable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout7" android:label="Views/Layouts/TableLayout/07. Column Collapse">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout7" android:label="Views/Layouts/TableLayout/07. Column Collapse">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout8" android:label="Views/Layouts/TableLayout/08. Toggle Stretch">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout8" android:label="Views/Layouts/TableLayout/08. Toggle Stretch">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout9" android:label="Views/Layouts/TableLayout/09. Toggle Shrink">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout9" android:label="Views/Layouts/TableLayout/09. Toggle Shrink">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout10" android:label="Views/Layouts/TableLayout/10. Simple Form">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout10" android:label="Views/Layouts/TableLayout/10. Simple Form">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout11" android:label="Views/Layouts/TableLayout/11. Gravity">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout11" android:label="Views/Layouts/TableLayout/11. Gravity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TableLayout12" android:label="Views/Layouts/TableLayout/12. Cell Spanning">
+        <activity android:name="com.example.android.apis4_4.view.TableLayout12" android:label="Views/Layouts/TableLayout/12. Cell Spanning">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.GridLayout0" android:label="Views/Layouts/GridLayout/0. Simple Form (Java)">
+        <activity android:name="com.example.android.apis4_4.view.GridLayout0" android:label="Views/Layouts/GridLayout/0. Simple Form (Java)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.GridLayout1" android:label="Views/Layouts/GridLayout/1. Simple Form (XML)">
+        <activity android:name="com.example.android.apis4_4.view.GridLayout1" android:label="Views/Layouts/GridLayout/1. Simple Form (XML)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Baseline1" android:label="Views/Layouts/Baseline/1. Top">
+        <activity android:name="com.example.android.apis4_4.view.Baseline1" android:label="Views/Layouts/Baseline/1. Top">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Baseline2" android:label="Views/Layouts/Baseline/2. Bottom">
+        <activity android:name="com.example.android.apis4_4.view.Baseline2" android:label="Views/Layouts/Baseline/2. Bottom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Baseline3" android:label="Views/Layouts/Baseline/3. Center">
+        <activity android:name="com.example.android.apis4_4.view.Baseline3" android:label="Views/Layouts/Baseline/3. Center">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Baseline4" android:label="Views/Layouts/Baseline/4. Everywhere">
+        <activity android:name="com.example.android.apis4_4.view.Baseline4" android:label="Views/Layouts/Baseline/4. Everywhere">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Baseline6" android:label="Views/Layouts/Baseline/5. Multi-line">
+        <activity android:name="com.example.android.apis4_4.view.Baseline6" android:label="Views/Layouts/Baseline/5. Multi-line">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Baseline7" android:label="Views/Layouts/Baseline/6. Relative">
+        <activity android:name="com.example.android.apis4_4.view.Baseline7" android:label="Views/Layouts/Baseline/6. Relative">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.BaselineNested1" android:label="Views/Layouts/Baseline/Nested Example 1">
+        <activity android:name="com.example.android.apis4_4.view.BaselineNested1" android:label="Views/Layouts/Baseline/Nested Example 1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.BaselineNested2" android:label="Views/Layouts/Baseline/Nested Example 2">
+        <activity android:name="com.example.android.apis4_4.view.BaselineNested2" android:label="Views/Layouts/Baseline/Nested Example 2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.BaselineNested3" android:label="Views/Layouts/Baseline/Nested Example 3">
+        <activity android:name="com.example.android.apis4_4.view.BaselineNested3" android:label="Views/Layouts/Baseline/Nested Example 3">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ScrollBar1" android:label="Views/ScrollBars/1. Basic">
+        <activity android:name="com.example.android.apis4_4.view.ScrollBar1" android:label="Views/ScrollBars/1. Basic">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ScrollBar2" android:label="Views/ScrollBars/2. Fancy">
+        <activity android:name="com.example.android.apis4_4.view.ScrollBar2" android:label="Views/ScrollBars/2. Fancy">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ScrollBar3" android:label="Views/ScrollBars/3. Style">
+        <activity android:name="com.example.android.apis4_4.view.ScrollBar3" android:label="Views/ScrollBars/3. Style">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Visibility1" android:label="Views/Visibility">
+        <activity android:name="com.example.android.apis4_4.view.Visibility1" android:label="Views/Visibility">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List1" android:label="Views/Lists/01. Array">
+        <activity android:name="com.example.android.apis4_4.view.List1" android:label="Views/Lists/01. Array">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List2" android:label="Views/Lists/02. Cursor (People)">
+        <activity android:name="com.example.android.apis4_4.view.List2" android:label="Views/Lists/02. Cursor (People)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List3" android:label="Views/Lists/03. Cursor (Phones)">
+        <activity android:name="com.example.android.apis4_4.view.List3" android:label="Views/Lists/03. Cursor (Phones)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List4" android:label="Views/Lists/04. ListAdapter">
+        <activity android:name="com.example.android.apis4_4.view.List4" android:label="Views/Lists/04. ListAdapter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List5" android:label="Views/Lists/05. Separators">
+        <activity android:name="com.example.android.apis4_4.view.List5" android:label="Views/Lists/05. Separators">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List6" android:label="Views/Lists/06. ListAdapter Collapsed">
+        <activity android:name="com.example.android.apis4_4.view.List6" android:label="Views/Lists/06. ListAdapter Collapsed">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List7" android:label="Views/Lists/07. Cursor (Phones)">
+        <activity android:name="com.example.android.apis4_4.view.List7" android:label="Views/Lists/07. Cursor (Phones)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List8" android:label="Views/Lists/08. Photos">
+        <activity android:name="com.example.android.apis4_4.view.List8" android:label="Views/Lists/08. Photos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List9" android:label="Views/Lists/09. Array (Overlay)">
+        <activity android:name="com.example.android.apis4_4.view.List9" android:label="Views/Lists/09. Array (Overlay)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List10" android:label="Views/Lists/10. Single choice list">
+        <activity android:name="com.example.android.apis4_4.view.List10" android:label="Views/Lists/10. Single choice list">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List11" android:label="Views/Lists/11. Multiple choice list">
+        <activity android:name="com.example.android.apis4_4.view.List11" android:label="Views/Lists/11. Multiple choice list">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List12" android:label="Views/Lists/12. Transcript">
+        <activity android:name="com.example.android.apis4_4.view.List12" android:label="Views/Lists/12. Transcript">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List13" android:label="Views/Lists/13. Slow Adapter">
+        <activity android:name="com.example.android.apis4_4.view.List13" android:label="Views/Lists/13. Slow Adapter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List14" android:label="Views/Lists/14. Efficient Adapter">
+        <activity android:name="com.example.android.apis4_4.view.List14" android:label="Views/Lists/14. Efficient Adapter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List15" android:label="Views/Lists/15. Selection Mode">
+        <activity android:name="com.example.android.apis4_4.view.List15" android:label="Views/Lists/15. Selection Mode">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List16" android:label="Views/Lists/16. Border selection mode">
+        <activity android:name="com.example.android.apis4_4.view.List16" android:label="Views/Lists/16. Border selection mode">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.List17" android:label="Views/Lists/17. Activate items">
+        <activity android:name="com.example.android.apis4_4.view.List17" android:label="Views/Lists/17. Activate items">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ExpandableList1" android:label="Views/Expandable Lists/1. Custom Adapter">
+        <activity android:name="com.example.android.apis4_4.view.ExpandableList1" android:label="Views/Expandable Lists/1. Custom Adapter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ExpandableList2" android:label="Views/Expandable Lists/2. Cursor (People)">
+        <activity android:name="com.example.android.apis4_4.view.ExpandableList2" android:label="Views/Expandable Lists/2. Cursor (People)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ExpandableList3" android:label="Views/Expandable Lists/3. Simple Adapter">
+        <activity android:name="com.example.android.apis4_4.view.ExpandableList3" android:label="Views/Expandable Lists/3. Simple Adapter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.CustomView1"
+        <activity android:name="com.example.android.apis4_4.view.CustomView1"
                 android:label="Views/Custom"
                 android:theme="@android:style/Theme.Light">
             <intent-filter>
@@ -1803,42 +1803,42 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Gallery1" android:label="Views/Gallery/1. Photos">
+        <activity android:name="com.example.android.apis4_4.view.Gallery1" android:label="Views/Gallery/1. Photos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Gallery2" android:label="Views/Gallery/2. People">
+        <activity android:name="com.example.android.apis4_4.view.Gallery2" android:label="Views/Gallery/2. People">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Spinner1" android:label="Views/Spinner">
+        <activity android:name="com.example.android.apis4_4.view.Spinner1" android:label="Views/Spinner">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Grid1" android:label="Views/Grid/1. Icon Grid">
+        <activity android:name="com.example.android.apis4_4.view.Grid1" android:label="Views/Grid/1. Icon Grid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Grid2" android:label="Views/Grid/2. Photo Grid">
+        <activity android:name="com.example.android.apis4_4.view.Grid2" android:label="Views/Grid/2. Photo Grid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Grid3"
+        <activity android:name="com.example.android.apis4_4.view.Grid3"
                   android:label="Views/Grid/3. Selection Mode">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1846,7 +1846,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ImageView1"
+        <activity android:name="com.example.android.apis4_4.view.ImageView1"
                 android:label="Views/ImageView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1854,7 +1854,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ImageSwitcher1"
+        <activity android:name="com.example.android.apis4_4.view.ImageSwitcher1"
                 android:label="Views/ImageSwitcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1862,7 +1862,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.TextSwitcher1"
+        <activity android:name="com.example.android.apis4_4.view.TextSwitcher1"
                 android:label="Views/TextSwitcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1870,7 +1870,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ImageButton1"
+        <activity android:name="com.example.android.apis4_4.view.ImageButton1"
                 android:label="Views/ImageButton">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1878,77 +1878,77 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Animation1" android:label="Views/Animation/Shake">
+        <activity android:name="com.example.android.apis4_4.view.Animation1" android:label="Views/Animation/Shake">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Animation2" android:label="Views/Animation/Push">
+        <activity android:name="com.example.android.apis4_4.view.Animation2" android:label="Views/Animation/Push">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Animation3" android:label="Views/Animation/Interpolators">
+        <activity android:name="com.example.android.apis4_4.view.Animation3" android:label="Views/Animation/Interpolators">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LayoutAnimation1" android:label="Views/Layout Animation/1. Grid Fade">
+        <activity android:name="com.example.android.apis4_4.view.LayoutAnimation1" android:label="Views/Layout Animation/1. Grid Fade">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LayoutAnimation2" android:label="Views/Layout Animation/2. List Cascade">
+        <activity android:name="com.example.android.apis4_4.view.LayoutAnimation2" android:label="Views/Layout Animation/2. List Cascade">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LayoutAnimation3" android:label="Views/Layout Animation/3. Reverse Order">
+        <activity android:name="com.example.android.apis4_4.view.LayoutAnimation3" android:label="Views/Layout Animation/3. Reverse Order">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LayoutAnimation4" android:label="Views/Layout Animation/4. Randomize">
+        <activity android:name="com.example.android.apis4_4.view.LayoutAnimation4" android:label="Views/Layout Animation/4. Randomize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LayoutAnimation5" android:label="Views/Layout Animation/5. Grid Direction">
+        <activity android:name="com.example.android.apis4_4.view.LayoutAnimation5" android:label="Views/Layout Animation/5. Grid Direction">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LayoutAnimation6" android:label="Views/Layout Animation/6. Wave Scale">
+        <activity android:name="com.example.android.apis4_4.view.LayoutAnimation6" android:label="Views/Layout Animation/6. Wave Scale">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.LayoutAnimation7" android:label="Views/Layout Animation/7. Nested Animations">
+        <activity android:name="com.example.android.apis4_4.view.LayoutAnimation7" android:label="Views/Layout Animation/7. Nested Animations">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Controls1"
+        <activity android:name="com.example.android.apis4_4.view.Controls1"
                   android:label="Views/Controls/1. Light Theme"
                   android:theme="@android:style/Theme.Light">
             <intent-filter>
@@ -1957,7 +1957,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Controls2"
+        <activity android:name="com.example.android.apis4_4.view.Controls2"
                   android:label="Views/Controls/2. Dark Theme"
                   android:theme="@android:style/Theme">
             <intent-filter>
@@ -1966,7 +1966,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Controls3"
+        <activity android:name="com.example.android.apis4_4.view.Controls3"
                   android:label="Views/Controls/3. Holo Light Theme"
                   android:theme="@android:style/Theme.Holo.Light"
                   android:enabled="@bool/atLeastHoneycomb">
@@ -1976,7 +1976,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Controls4"
+        <activity android:name="com.example.android.apis4_4.view.Controls4"
                   android:label="Views/Controls/4. Holo Dark Theme"
                   android:theme="@android:style/Theme.Holo"
                   android:enabled="@bool/atLeastHoneycomb">
@@ -1986,7 +1986,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Controls5"
+        <activity android:name="com.example.android.apis4_4.view.Controls5"
                   android:label="Views/Controls/5. Custom Theme"
                   android:theme="@style/CustomTheme">
             <intent-filter>
@@ -1995,7 +1995,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Controls6"
+        <activity android:name="com.example.android.apis4_4.view.Controls6"
                   android:label="Views/Controls/6. Holo or Old Theme"
                   android:theme="@style/ThemeHolo">
             <intent-filter>
@@ -2004,7 +2004,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Buttons1"
+        <activity android:name="com.example.android.apis4_4.view.Buttons1"
                 android:label="Views/Buttons">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2012,147 +2012,147 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.AutoComplete1" android:label="Views/Auto Complete/1. Screen Top">
+        <activity android:name="com.example.android.apis4_4.view.AutoComplete1" android:label="Views/Auto Complete/1. Screen Top">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.AutoComplete2" android:label="Views/Auto Complete/2. Screen Bottom">
+        <activity android:name="com.example.android.apis4_4.view.AutoComplete2" android:label="Views/Auto Complete/2. Screen Bottom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.AutoComplete3" android:label="Views/Auto Complete/3. Scroll">
+        <activity android:name="com.example.android.apis4_4.view.AutoComplete3" android:label="Views/Auto Complete/3. Scroll">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.AutoComplete4" android:label="Views/Auto Complete/4. Contacts">
+        <activity android:name="com.example.android.apis4_4.view.AutoComplete4" android:label="Views/Auto Complete/4. Contacts">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.AutoComplete5" android:label="Views/Auto Complete/5. Contacts with Hint">
+        <activity android:name="com.example.android.apis4_4.view.AutoComplete5" android:label="Views/Auto Complete/5. Contacts with Hint">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.AutoComplete6" android:label="Views/Auto Complete/6. Multiple items">
+        <activity android:name="com.example.android.apis4_4.view.AutoComplete6" android:label="Views/Auto Complete/6. Multiple items">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ProgressBar1" android:label="Views/Progress Bar/1. Incremental">
+        <activity android:name="com.example.android.apis4_4.view.ProgressBar1" android:label="Views/Progress Bar/1. Incremental">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ProgressBar2" android:label="Views/Progress Bar/2. Smooth">
+        <activity android:name="com.example.android.apis4_4.view.ProgressBar2" android:label="Views/Progress Bar/2. Smooth">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ProgressBar3" android:label="Views/Progress Bar/3. Dialogs">
+        <activity android:name="com.example.android.apis4_4.view.ProgressBar3" android:label="Views/Progress Bar/3. Dialogs">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ProgressBar4" android:label="Views/Progress Bar/4. In Title Bar">
+        <activity android:name="com.example.android.apis4_4.view.ProgressBar4" android:label="Views/Progress Bar/4. In Title Bar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.SeekBar1" android:label="Views/Seek Bar">
+        <activity android:name="com.example.android.apis4_4.view.SeekBar1" android:label="Views/Seek Bar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.RatingBar1" android:label="Views/Rating Bar">
+        <activity android:name="com.example.android.apis4_4.view.RatingBar1" android:label="Views/Rating Bar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Focus1" android:label="Views/Focus/1. Vertical">
+        <activity android:name="com.example.android.apis4_4.view.Focus1" android:label="Views/Focus/1. Vertical">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Focus2" android:label="Views/Focus/2. Horizontal">
+        <activity android:name="com.example.android.apis4_4.view.Focus2" android:label="Views/Focus/2. Horizontal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Focus3" android:label="Views/Focus/3. Circular">
+        <activity android:name="com.example.android.apis4_4.view.Focus3" android:label="Views/Focus/3. Circular">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.InternalSelectionFocus" android:label="Views/Focus/4. Internal Selection">
+        <activity android:name="com.example.android.apis4_4.view.InternalSelectionFocus" android:label="Views/Focus/4. Internal Selection">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Focus5" android:label="Views/Focus/5. Sequential (Tab Order)">
+        <activity android:name="com.example.android.apis4_4.view.Focus5" android:label="Views/Focus/5. Sequential (Tab Order)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.DateWidgets1" android:label="Views/Date Widgets/1. Dialog">
+        <activity android:name="com.example.android.apis4_4.view.DateWidgets1" android:label="Views/Date Widgets/1. Dialog">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.DateWidgets2" android:label="Views/Date Widgets/2. Inline">
+        <activity android:name="com.example.android.apis4_4.view.DateWidgets2" android:label="Views/Date Widgets/2. Inline">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.PopupMenu1" android:label="Views/Popup Menu">
+        <activity android:name="com.example.android.apis4_4.view.PopupMenu1" android:label="Views/Popup Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.SearchViewActionBar" android:label="Views/Search View/Action Bar"
+        <activity android:name="com.example.android.apis4_4.view.SearchViewActionBar" android:label="Views/Search View/Action Bar"
                   android:theme="@android:style/Theme.Holo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2162,7 +2162,7 @@
                        android:value=".app.SearchQueryResults" />
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.SearchViewAlwaysVisible" android:label="Views/Search View/Always Expanded"
+        <activity android:name="com.example.android.apis4_4.view.SearchViewAlwaysVisible" android:label="Views/Search View/Always Expanded"
                   android:theme="@android:style/Theme.Holo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2172,7 +2172,7 @@
                        android:value=".app.SearchQueryResults" />
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.SearchViewFilterMode" android:label="Views/Search View/Filter"
+        <activity android:name="com.example.android.apis4_4.view.SearchViewFilterMode" android:label="Views/Search View/Filter"
                   android:theme="@android:style/Theme.Holo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2180,28 +2180,28 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.RotatingButton" android:label="Views/Rotating Button">
+        <activity android:name="com.example.android.apis4_4.view.RotatingButton" android:label="Views/Rotating Button">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.SecureView" android:label="Views/Secure View">
+        <activity android:name="com.example.android.apis4_4.view.SecureView" android:label="Views/Secure View">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.SplitTouchView" android:label="Views/Splitting Touches across Views">
+        <activity android:name="com.example.android.apis4_4.view.SplitTouchView" android:label="Views/Splitting Touches across Views">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.DragAndDropDemo"
+        <activity android:name="com.example.android.apis4_4.view.DragAndDropDemo"
                 android:label="Views/Drag and Drop"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
@@ -2211,21 +2211,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.GameControllerInput" android:label="Views/Game Controller Input">
+        <activity android:name="com.example.android.apis4_4.view.GameControllerInput" android:label="Views/Game Controller Input">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Hover" android:label="Views/Hover Events">
+        <activity android:name="com.example.android.apis4_4.view.Hover" android:label="Views/Hover Events">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.OverscanActivity"
+        <activity android:name="com.example.android.apis4_4.view.OverscanActivity"
                 android:label="Views/System UI Visibility/System UI Modes"
                 android:uiOptions="splitActionBarWhenNarrow">
             <intent-filter>
@@ -2234,7 +2234,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.ContentBrowserActivity"
+        <activity android:name="com.example.android.apis4_4.view.ContentBrowserActivity"
                 android:label="Views/System UI Visibility/Content Browser"
                 android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
                 android:uiOptions="splitActionBarWhenNarrow">
@@ -2244,7 +2244,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.VideoPlayerActivity"
+        <activity android:name="com.example.android.apis4_4.view.VideoPlayerActivity"
                 android:label="Views/System UI Visibility/Video Player"
                 android:theme="@android:style/Theme.Holo"
                 android:uiOptions="splitActionBarWhenNarrow">
@@ -2254,7 +2254,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.view.Switches" android:label="Views/Switches">
+        <activity android:name="com.example.android.apis4_4.view.Switches" android:label="Views/Switches">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -2265,7 +2265,7 @@
         <!--           GRAPHICS SAMPLES            -->
         <!-- ************************************* -->
 
-        <activity android:name="com.example.android.apis4.graphics.kube.Kube" android:label="Graphics/OpenGL ES/Kube"
+        <activity android:name="com.example.android.apis4_4.graphics.kube.Kube" android:label="Graphics/OpenGL ES/Kube"
                   android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2273,21 +2273,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.Compass" android:label="Graphics/Compass">
+        <activity android:name="com.example.android.apis4_4.graphics.Compass" android:label="Graphics/Compass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.CameraPreview" android:label="Graphics/CameraPreview" android:screenOrientation="landscape">
+        <activity android:name="com.example.android.apis4_4.graphics.CameraPreview" android:label="Graphics/CameraPreview" android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.CompressedTextureActivity"
+        <activity android:name="com.example.android.apis4_4.graphics.CompressedTextureActivity"
                 android:label="Graphics/OpenGL ES/Compressed Texture"
                 android:theme="@android:style/Theme.NoTitleBar"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
@@ -2297,7 +2297,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.CubeMapActivity"
+        <activity android:name="com.example.android.apis4_4.graphics.CubeMapActivity"
                 android:label="Graphics/OpenGL ES/Cube Map"
                 android:theme="@android:style/Theme.NoTitleBar"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
@@ -2308,7 +2308,7 @@
         </activity>
 
 
-        <activity android:name="com.example.android.apis4.graphics.FrameBufferObjectActivity"
+        <activity android:name="com.example.android.apis4_4.graphics.FrameBufferObjectActivity"
                 android:label="Graphics/OpenGL ES/Frame Buffer Object"
                 android:theme="@android:style/Theme.NoTitleBar"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
@@ -2318,7 +2318,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.GLSurfaceViewActivity"
+        <activity android:name="com.example.android.apis4_4.graphics.GLSurfaceViewActivity"
                 android:label="Graphics/OpenGL ES/GLSurfaceView"
                 android:theme="@android:style/Theme.NoTitleBar"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
@@ -2328,7 +2328,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.GLES20Activity"
+        <activity android:name="com.example.android.apis4_4.graphics.GLES20Activity"
                 android:label="Graphics/OpenGL ES/OpenGL ES 2.0"
                 android:theme="@android:style/Theme.NoTitleBar"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
@@ -2338,7 +2338,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.MatrixPaletteActivity"
+        <activity android:name="com.example.android.apis4_4.graphics.MatrixPaletteActivity"
                 android:label="Graphics/OpenGL ES/Matrix Palette Skinning"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
             <intent-filter>
@@ -2347,7 +2347,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.TranslucentGLSurfaceViewActivity"
+        <activity android:name="com.example.android.apis4_4.graphics.TranslucentGLSurfaceViewActivity"
                 android:label="Graphics/OpenGL ES/Translucent GLSurfaceView"
                 android:theme="@style/Theme.Translucent"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
@@ -2357,7 +2357,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.TriangleActivity"
+        <activity android:name="com.example.android.apis4_4.graphics.TriangleActivity"
                 android:label="Graphics/OpenGL ES/Textured Triangle"
                 android:theme="@android:style/Theme.Holo.Dialog"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
@@ -2367,7 +2367,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.spritetext.SpriteTextActivity"
+        <activity android:name="com.example.android.apis4_4.graphics.spritetext.SpriteTextActivity"
                 android:label="Graphics/OpenGL ES/Sprite Text"
                 android:theme="@android:style/Theme.NoTitleBar"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
@@ -2377,7 +2377,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.TouchRotateActivity"
+        <activity android:name="com.example.android.apis4_4.graphics.TouchRotateActivity"
                 android:label="Graphics/OpenGL ES/Touch Rotate"
                 android:theme="@android:style/Theme.NoTitleBar"
                 android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize">
@@ -2387,35 +2387,35 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.PolyToPoly" android:label="Graphics/PolyToPoly">
+        <activity android:name="com.example.android.apis4_4.graphics.PolyToPoly" android:label="Graphics/PolyToPoly">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.ScaleToFit" android:label="Graphics/ScaleToFit">
+        <activity android:name="com.example.android.apis4_4.graphics.ScaleToFit" android:label="Graphics/ScaleToFit">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.RoundRects" android:label="Graphics/RoundRects">
+        <activity android:name="com.example.android.apis4_4.graphics.RoundRects" android:label="Graphics/RoundRects">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.ShapeDrawable1" android:label="Graphics/Drawable/ShapeDrawable">
+        <activity android:name="com.example.android.apis4_4.graphics.ShapeDrawable1" android:label="Graphics/Drawable/ShapeDrawable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.SurfaceViewOverlay"
+        <activity android:name="com.example.android.apis4_4.graphics.SurfaceViewOverlay"
                 android:label="Graphics/SurfaceView Overlay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2423,7 +2423,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.WindowSurface"
+        <activity android:name="com.example.android.apis4_4.graphics.WindowSurface"
                 android:label="Graphics/Surface Window">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2432,36 +2432,21 @@
         </activity>
 
         <activity android:hardwareAccelerated="false"
-                  android:name="com.example.android.apis4.graphics.TextAlign" android:label="Graphics/Text Align">
+                  android:name="com.example.android.apis4_4.graphics.TextAlign" android:label="Graphics/Text Align">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.Arcs" android:label="Graphics/Arcs">
+        <activity android:name="com.example.android.apis4_4.graphics.Arcs" android:label="Graphics/Arcs">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.Patterns" android:label="Graphics/Patterns">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:hardwareAccelerated="false"
-                  android:name="com.example.android.apis4.graphics.Clipping" android:label="Graphics/Clipping">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.Layers" android:label="Graphics/Layers">
+        <activity android:name="com.example.android.apis4_4.graphics.Patterns" android:label="Graphics/Patterns">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -2469,22 +2454,14 @@
         </activity>
 
         <activity android:hardwareAccelerated="false"
-                  android:name="com.example.android.apis4.graphics.UnicodeChart" android:label="Graphics/UnicodeChart">
+                  android:name="com.example.android.apis4_4.graphics.Clipping" android:label="Graphics/Clipping">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.PathFillTypes" android:label="Graphics/PathFillTypes">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:hardwareAccelerated="false"
-                  android:name="com.example.android.apis4.graphics.Pictures" android:label="Graphics/Pictures">
+        <activity android:name="com.example.android.apis4_4.graphics.Layers" android:label="Graphics/Layers">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -2492,77 +2469,14 @@
         </activity>
 
         <activity android:hardwareAccelerated="false"
-                  android:name="com.example.android.apis4.graphics.Vertices" android:label="Graphics/Vertices">
+                  android:name="com.example.android.apis4_4.graphics.UnicodeChart" android:label="Graphics/UnicodeChart">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.AnimateDrawables" android:label="Graphics/AnimateDrawables">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.SensorTest" android:label="Graphics/SensorTest">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.AlphaBitmap" android:label="Graphics/AlphaBitmap">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.Regions" android:label="Graphics/Regions">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.Sweep" android:label="Graphics/Sweep">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.BitmapMesh" android:label="Graphics/BitmapMesh">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.MeasureText" android:label="Graphics/MeasureText">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.Typefaces" android:label="Graphics/Typefaces">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.FingerPaint" android:label="Graphics/FingerPaint">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.ColorMatrixSample" android:label="Graphics/ColorMatrix">
+        <activity android:name="com.example.android.apis4_4.graphics.PathFillTypes" android:label="Graphics/PathFillTypes">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -2570,21 +2484,7 @@
         </activity>
 
         <activity android:hardwareAccelerated="false"
-                  android:name="com.example.android.apis4.graphics.BitmapDecode" android:label="Graphics/BitmapDecode">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.ColorFilters" android:label="Graphics/ColorFilters">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.example.android.apis4.graphics.CreateBitmap" android:label="Graphics/CreateBitmap">
+                  android:name="com.example.android.apis4_4.graphics.Pictures" android:label="Graphics/Pictures">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -2592,14 +2492,114 @@
         </activity>
 
         <activity android:hardwareAccelerated="false"
-                  android:name="com.example.android.apis4.graphics.DrawPoints" android:label="Graphics/Points">
+                  android:name="com.example.android.apis4_4.graphics.Vertices" android:label="Graphics/Vertices">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.TouchPaint" android:label="Graphics/Touch Paint"
+        <activity android:name="com.example.android.apis4_4.graphics.AnimateDrawables" android:label="Graphics/AnimateDrawables">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.SensorTest" android:label="Graphics/SensorTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.AlphaBitmap" android:label="Graphics/AlphaBitmap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.Regions" android:label="Graphics/Regions">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.Sweep" android:label="Graphics/Sweep">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.BitmapMesh" android:label="Graphics/BitmapMesh">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.MeasureText" android:label="Graphics/MeasureText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.Typefaces" android:label="Graphics/Typefaces">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.FingerPaint" android:label="Graphics/FingerPaint">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.ColorMatrixSample" android:label="Graphics/ColorMatrix">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:hardwareAccelerated="false"
+                  android:name="com.example.android.apis4_4.graphics.BitmapDecode" android:label="Graphics/BitmapDecode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.ColorFilters" android:label="Graphics/ColorFilters">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.CreateBitmap" android:label="Graphics/CreateBitmap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:hardwareAccelerated="false"
+                  android:name="com.example.android.apis4_4.graphics.DrawPoints" android:label="Graphics/Points">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.apis4_4.graphics.TouchPaint" android:label="Graphics/Touch Paint"
                   android:theme="@style/Theme.Black"
                   android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize">
             <intent-filter>
@@ -2608,49 +2608,49 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.BitmapPixels" android:label="Graphics/BitmapPixels">
+        <activity android:name="com.example.android.apis4_4.graphics.BitmapPixels" android:label="Graphics/BitmapPixels">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.Xfermodes" android:label="Graphics/Xfermodes">
+        <activity android:name="com.example.android.apis4_4.graphics.Xfermodes" android:label="Graphics/Xfermodes">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.PathEffects" android:label="Graphics/PathEffects">
+        <activity android:name="com.example.android.apis4_4.graphics.PathEffects" android:label="Graphics/PathEffects">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.GradientDrawable1" android:label="Graphics/Drawable/GradientDrawable">
+        <activity android:name="com.example.android.apis4_4.graphics.GradientDrawable1" android:label="Graphics/Drawable/GradientDrawable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.graphics.PurgeableBitmap" android:label="Graphics/PurgeableBitmap/NonPurgeable">
+        <activity android:name="com.example.android.apis4_4.graphics.PurgeableBitmap" android:label="Graphics/PurgeableBitmap/NonPurgeable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-       <activity-alias android:targetActivity="com.example.android.apis4.graphics.PurgeableBitmap" android:name="Purgeable" android:label="Graphics/PurgeableBitmap/Purgeable">
+       <activity-alias android:targetActivity="com.example.android.apis4_4.graphics.PurgeableBitmap" android:name="Purgeable" android:label="Graphics/PurgeableBitmap/Purgeable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity-alias>
 
-        <activity android:name="com.example.android.apis4.graphics.DensityActivity" android:label="Graphics/Density">
+        <activity android:name="com.example.android.apis4_4.graphics.DensityActivity" android:label="Graphics/Density">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -2661,33 +2661,33 @@
         <!--             MEDIA SAMPLES             -->
         <!-- ************************************* -->
 
-        <activity android:name="com.example.android.apis4.media.MediaPlayerDemo" android:label="Media/MediaPlayer">
+        <activity android:name="com.example.android.apis4_4.media.MediaPlayerDemo" android:label="Media/MediaPlayer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.media.MediaPlayerDemo_Audio" android:label="Media/MediaPlayer">
+        <activity android:name="com.example.android.apis4_4.media.MediaPlayerDemo_Audio" android:label="Media/MediaPlayer">
             <intent-filter>
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.media.MediaPlayerDemo_Video" android:label="Media/MediaPlayer">
+        <activity android:name="com.example.android.apis4_4.media.MediaPlayerDemo_Video" android:label="Media/MediaPlayer">
             <intent-filter>
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.media.VideoViewDemo" android:label="Media/VideoView">
+        <activity android:name="com.example.android.apis4_4.media.VideoViewDemo" android:label="Media/VideoView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.media.AudioFxDemo" android:label="Media/AudioFx">
+        <activity android:name="com.example.android.apis4_4.media.AudioFxDemo" android:label="Media/AudioFx">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -2698,7 +2698,7 @@
         <!--      APPWIDGET PACKAGE SAMPLES           -->
         <!-- ************************************* -->
 
-        <receiver android:name="com.example.android.apis4.appwidget.ExampleAppWidgetProvider">
+        <receiver android:name="com.example.android.apis4_4.appwidget.ExampleAppWidgetProvider">
             <meta-data android:name="android.appwidget.provider"
                     android:resource="@xml/appwidget_provider" />
             <intent-filter>
@@ -2706,13 +2706,13 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name="com.example.android.apis4.appwidget.ExampleAppWidgetConfigure">
+        <activity android:name="com.example.android.apis4_4.appwidget.ExampleAppWidgetConfigure">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.example.android.apis4.appwidget.ExampleBroadcastReceiver" android:enabled="false">
+        <receiver android:name="com.example.android.apis4_4.appwidget.ExampleBroadcastReceiver" android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.ACTION_TIMEZONE_CHANGED" />
                 <action android:name="android.intent.ACTION_TIME" />
@@ -2723,35 +2723,35 @@
         <!--             OTHER SAMPLES             -->
         <!-- ************************************* -->
 
-        <activity android:name="com.example.android.apis4.text.Link" android:label="Text/Linkify">
+        <activity android:name="com.example.android.apis4_4.text.Link" android:label="Text/Linkify">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.text.Marquee" android:label="Text/Marquee">
+        <activity android:name="com.example.android.apis4_4.text.Marquee" android:label="Text/Marquee">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.text.LogTextBox1" android:label="Text/LogTextBox">
+        <activity android:name="com.example.android.apis4_4.text.LogTextBox1" android:label="Text/LogTextBox">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.nfc.ForegroundDispatch" android:label="NFC/ForegroundDispatch">
+        <activity android:name="com.example.android.apis4_4.nfc.ForegroundDispatch" android:label="NFC/ForegroundDispatch">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.android.apis4.nfc.TechFilter" android:label="NFC/TechFilter">
+        <activity android:name="com.example.android.apis4_4.nfc.TechFilter" android:label="NFC/TechFilter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -2767,7 +2767,7 @@
             />
         </activity>
 
-        <activity android:name="com.example.android.apis4.nfc.ForegroundNdefPush" android:label="NFC/ForegroundNdefPush">
+        <activity android:name="com.example.android.apis4_4.nfc.ForegroundNdefPush" android:label="NFC/ForegroundNdefPush">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -2776,8 +2776,8 @@
 
     </application>
 
-    <instrumentation android:name="com.example.android.apis4.app.LocalSampleInstrumentation"
-        android:targetPackage="com.example.android.apis4"
+    <instrumentation android:name="com.example.android.apis4_4.app.LocalSampleInstrumentation"
+        android:targetPackage="com.example.android.apis4_4"
         android:label="Local Sample" />
 
 </manifest>

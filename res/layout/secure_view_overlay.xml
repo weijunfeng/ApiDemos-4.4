@@ -16,7 +16,7 @@
 
 <!-- An overlay that will appear on top of the secure view in an attempt to obscure
      its true purpose and encourage the user to click on the secure button. -->
-<com.example.android.apis4.view.SecureViewOverlay
+<com.example.android.apis4_4.view.SecureViewOverlay
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -47,4 +47,4 @@
         android:layout_height="wrap_content"
         android:textColor="#383"
         android:text="@string/secure_view_overlay_button3"/>
-</com.example.android.apis4.view.SecureViewOverlay>
+</com.example.android.apis4_4.view.SecureViewOverlay>

@@ -18,7 +18,7 @@
     Demonstrates clipboard.
 
     See corresponding Java code:
-    com.example.android.apis4.content.ClipboardSample
+    com.example.android.apis4_4.content.ClipboardSample
 -->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"

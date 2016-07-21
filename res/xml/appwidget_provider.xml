@@ -19,7 +19,7 @@
     android:minHeight="30dp"
     android:updatePeriodMillis="86400000"
     android:initialLayout="@layout/appwidget_provider"
-    android:configure="com.example.android.apis4.appwidget.ExampleAppWidgetConfigure"
+    android:configure="com.example.android.apis4_4.appwidget.ExampleAppWidgetConfigure"
     android:resizeMode="horizontal"
     >
 </appwidget-provider>

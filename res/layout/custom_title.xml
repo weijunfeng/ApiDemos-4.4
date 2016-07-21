@@ -15,7 +15,7 @@
 -->
 
 <!-- Demonstrates how to use a custom title.
-     See corresponding Java code com.example.android.apis4.app.CustomTitle.java. -->
+     See corresponding Java code com.example.android.apis4_4.app.CustomTitle.java. -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
     android:id="@+id/screen"

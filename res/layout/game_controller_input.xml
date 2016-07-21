@@ -41,7 +41,7 @@
             android:padding="3dip">
         </ListView>
 
-        <com.example.android.apis4.view.GameView
+        <com.example.android.apis4_4.view.GameView
             android:id="@+id/game"
             android:layout_width="0dip"
             android:layout_height="match_parent"

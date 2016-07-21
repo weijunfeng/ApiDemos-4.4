@@ -26,7 +26,7 @@
         android:text="@string/accessibility_query_window_instructions"
         />
 
-    <com.example.android.apis4.accessibility.TaskListView
+    <com.example.android.apis4_4.accessibility.TaskListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
